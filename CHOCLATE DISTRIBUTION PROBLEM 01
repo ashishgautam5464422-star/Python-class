@@ -1,0 +1,15 @@
+def chocolateDistribution(arr, m):
+    n = len(arr)
+
+    # Agar students zyada hain packets se
+    if m > n:
+        return -1
+
+    # Step 1: Sort the array
+    arr.sort()
+
+    # Step 2: Initial minimum difference
+    min_diff = arr[m - 1] - arr[0]
+
+    # Step 3: Check all possible m-sized windows
+    for
